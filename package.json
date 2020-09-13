@@ -1,0 +1,20 @@
+{
+  "name": "web-window-server",
+  "version": "0.1.0",
+  "description": "Web Window Server",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duckki Oe",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.2.0"
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "http-parser-js": "^0.5.2",
+    "reverse-http": "^1.3.0"
+  }
+}
