@@ -225,12 +225,6 @@ function createMainWindow() {
     win.loadFile('main-window.html')
 }
 
-function startServer()
-{
-    console.log( "app: starting http server." );
-    server.listen( 8080, "localhost" )
-}
-
 
 //////////////////////////////////////////////////////////////////////////////
 // Initialization
@@ -243,6 +237,16 @@ protocol.registerSchemesAsPrivileged([
         }
     }
 ])
+
+const ServerPort = 6078 // An unassigned port number
+// For current assignments, see https://www.iana.org/assignments/service-names-port-numbers
+
+function startServer()
+{
+    console.log( "app: starting http server." );
+    // Binding interface is "localhost" for security reasons.
+    server.listen( ServerPort, "localhost" )
+}
 
 app.whenReady().then(createMainWindow)
                .then(startServer)

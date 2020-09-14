@@ -45,7 +45,7 @@ function createTestPngImage()
 // Connection options
 const opts = {
     hostname: 'localhost',
-    port: 8080,
+    port: 6078,
     method: 'GET',
     path: '/'
 }
